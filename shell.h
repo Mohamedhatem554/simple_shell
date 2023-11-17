@@ -16,7 +16,7 @@
 extern char **environ;
 /*functions*/
 
-int _execute(char **cmd, char **arg);
+int _execute(char **cmd, char **argv, int index);
 void freearr(char **array);
 char *_getline(void);
 char *_strdup(const char *string);
@@ -25,6 +25,12 @@ int _strlen(char *s);
 char *_strcat(char *dest, char *src);
 char *_strcpy(char *dest, char *src);
 char **taketoken(char *str);
+char *_getenv(char *cmd);
+void _printerror(char *name, char *cmd, int index);
+char *_itoa(int n);
+void _rev(char *str, int l);
+char *_getpath(char *cmd);
+
 
 
 
